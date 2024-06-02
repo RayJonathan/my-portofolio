@@ -1,11 +1,11 @@
 import Image from "next/image";
 import Link from "next/link";
+import activityList from "./activity";
+
 export default function About() {
   return (
-    <main className="h-screen flex flex-col items-center">
-
-
-      <div className="flex flex-col md:flex-row items-center w-full max-w-4xl mt-8">
+    <main className="h-screen flex flex-col items-center justify-center">  {/* Added justify-center */}
+      <div id="1" className="flex flex-col md:flex-row items-center w-full max-w-4xl mt-8">
         <div className="w-full mr-4 md:w-1/3">
           <Image
             src="/rayjo_potrait.png"
@@ -22,8 +22,8 @@ export default function About() {
           </h1>
           <p className="font-bold">A story of hardwork and perseverance</p>
           <p className="text-lg mb-4 text-gray-300">
-            Hello, my name is ray jonathan. i have a passion for design
-            especially in web design. i also really like to develop websites
+            Hello, my name is ray jonathan. I have a passion for design
+            especially in web design. I also really like to develop websites
             whether it's front-end or back-end. I have a very high curiosity so
             that I always explore new things, especially in the field of
             informatics and the latest technology.
@@ -125,15 +125,18 @@ export default function About() {
                 <span className="ml-2">Android Studio</span>
               </div>
             </div>
+            <a
+              href="/RayJonathanCV.pdf"
+              download
+              className="inline-block bg-blue-500 text-white py-2 px-4 rounded hover:bg-blue-700 mt-8"
+            >
+              Download CV
+            </a>
           </div>
-          <a
-            href="/RayJonathanCV.pdf"
-            download
-            className="inline-block bg-blue-500 text-white py-2 px-4 rounded hover:bg-blue-700 mt-8"
-          >
-            Download CV
-          </a>
         </div>
+      </div>
+      <div>
+        <p className="font-montserrat font-bold text-5xl text- mt-56">MY ACTIVITY</p>
       </div>
     </main>
   );

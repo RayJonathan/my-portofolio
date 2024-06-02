@@ -1,5 +1,6 @@
 import type { Config } from "tailwindcss";
 
+
 const config: Config = {
   content: [
     "./pages/**/*.{js,ts,jsx,tsx,mdx}",
@@ -16,7 +17,10 @@ const config: Config = {
         'third-color' : '#00FFDD',
         'fourth-color' : '#E8FFC2',
       },
-
+      fontFamily: {
+        'sans': ['Helvetica', 'sans-serif'],
+        'montserrat': ['Montserrat', 'sans-serif'],
+      },
       backgroundImage: {
         "gradient-radial": "radial-gradient(var(--tw-gradient-stops))",
         "gradient-conic":

@@ -1,7 +1,9 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+@import url('https://fonts.googleapis.com/css2?family=Helvetica&display=swap');
 
+@import url('https://fonts.googleapis.com/css2?family=Helvetica&display=swap');
 :root {
   --foreground-rgb: 0, 0, 0;
   --background-start-rgb: 214, 219, 220;
@@ -15,6 +17,8 @@
     --background-end-rgb: 0, 0, 0;
   }
 }
+
+
 
 body {
   color: rgb(var(--foreground-rgb));
